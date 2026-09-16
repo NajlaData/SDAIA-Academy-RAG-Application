@@ -1,0 +1,280 @@
+# SDAIA Academy - Modern Data Engineering for Advanced AI Systems
+# Full RAG Application - Python Dependencies
+# Python 3.9+
+
+# ============================================================================
+# CORE FRAMEWORKS & DATA PROCESSING
+# ============================================================================
+
+# Data Processing & Analytics
+pandas>=2.0.0
+numpy>=1.24.0
+polars>=0.19.0  # Modern DataFrame library
+
+# PySpark for distributed processing
+pyspark>=3.4.0
+delta-spark>=3.0.0  # Delta Lake support
+
+# Apache Airflow for orchestration
+apache-airflow>=2.6.0
+apache-airflow-providers-apache-spark>=4.0.0
+apache-airflow-providers-apache-kafka>=1.2.0
+
+# ============================================================================
+# DATA INGESTION & STREAMING
+# ============================================================================
+
+# Kafka
+confluent-kafka>=2.2.0
+kafka-python>=2.0.2
+
+# Data validation & contracts
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+great-expectations>=0.17.0  # Data quality framework
+
+# ============================================================================
+# SEARCH & RETRIEVAL
+# ============================================================================
+
+# Vector databases
+# Choose one or install multiple for flexibility
+
+# FAISS for local/in-memory vector search
+faiss-cpu>=1.7.4  # Use faiss-gpu if GPU available
+
+# Weaviate Python client
+weaviate-client>=3.25.0
+
+# Pinecone for cloud vector DB
+pinecone-client>=2.2.0
+
+# LangChain for RAG orchestration
+langchain>=0.0.300
+langchain-core>=0.0.300
+langchain-community>=0.0.0
+
+# LLamaIndex (formerly GPT Index) for advanced RAG
+llama-index>=0.9.0
+llama-index-llms-anthropic>=0.1.0
+llama-index-llms-openai>=0.1.0
+
+# Embeddings & Semantic Search
+sentence-transformers>=2.2.0
+scikit-learn>=1.3.0  # For similarity metrics
+numpy-approximate-nearest-neighbor>=0.15.0
+
+# BM25 for keyword search
+rank-bm25>=0.2.2
+
+# ============================================================================
+# LLM INTEGRATION & GENERATION
+# ============================================================================
+
+# LLM Providers
+openai>=1.0.0
+anthropic>=0.7.0  # Anthropic Claude API
+huggingface-hub>=0.16.0
+
+# Local LLM support
+ollama-python>=0.1.0  # For local Ollama integration
+llama-cpp-python>=0.2.0  # For GGUF models
+
+# Prompt engineering & optimization
+prompt-toolkit>=3.0.0
+
+# ============================================================================
+# API & WEB FRAMEWORKS
+# ============================================================================
+
+# FastAPI for REST API
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.0.0
+
+# Gradio for simple web interfaces
+gradio>=3.50.0
+
+# Streamlit for interactive dashboards
+streamlit>=1.28.0
+
+# ============================================================================
+# EVALUATION & MONITORING
+# ============================================================================
+
+# RAG Evaluation Framework (RAGAS)
+ragas>=0.0.40
+
+# Monitoring & Observability
+opentelemetry-api>=1.20.0
+opentelemetry-sdk>=1.20.0
+opentelemetry-exporter-jaeger>=1.20.0
+
+# OpenLineage for data lineage
+openlineage-python>=0.20.0
+
+# MLflow for experiment tracking
+mlflow>=2.7.0
+
+# ============================================================================
+# TESTING & QUALITY
+# ============================================================================
+
+# Testing frameworks
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.11.0
+
+# Code quality
+black>=23.9.0  # Code formatter
+flake8>=6.0.0  # Linter
+isort>=5.12.0  # Import sorter
+mypy>=1.5.0  # Type checking
+pylint>=2.17.0
+
+# ============================================================================
+# UTILITIES & HELPERS
+# ============================================================================
+
+# Environment & Config management
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+hydra-core>=1.3.0
+
+# Logging & Debugging
+python-json-logger>=2.0.7
+loguru>=0.7.1
+
+# Data serialization
+msgpack>=1.0.7
+pickle-mixin>=1.0.0
+
+# File handling
+python-magic>=0.4.27
+openpyxl>=3.1.0  # Excel support
+
+# CLI utilities
+click>=8.1.0
+typer>=0.9.0
+rich>=13.5.0  # Pretty terminal output
+
+# Job scheduling
+APScheduler>=3.10.0
+
+# ============================================================================
+# JUPYTER & NOTEBOOKS
+# ============================================================================
+
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+notebook>=7.0.0
+ipywidgets>=8.1.0
+
+# Notebook utilities
+nbstripout>=0.6.0  # Remove cell outputs from git
+
+# ============================================================================
+# DATABASE CONNECTORS
+# ============================================================================
+
+# SQL databases
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0  # PostgreSQL
+pymysql>=1.1.0  # MySQL
+sqlite3-python>=1.0.0
+
+# Data warehouse
+snowflake-sqlalchemy>=1.5.0
+google-cloud-bigquery>=3.12.0
+
+# ============================================================================
+# DOCUMENTATION & VISUALIZATION
+# ============================================================================
+
+# Documentation generation
+sphinx>=7.0.0
+sphinx-rtd-theme>=1.3.0
+
+# Data visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.17.0
+altair>=5.0.0
+
+# Network visualization
+networkx>=3.1
+graphviz>=0.20.0
+
+# ============================================================================
+# DEPLOYMENT & CONTAINERIZATION
+# ============================================================================
+
+# Docker integration
+docker>=6.1.0
+docker-compose>=1.29.0  # For local testing
+
+# ============================================================================
+# OPTIONAL: ADVANCED FEATURES
+# ============================================================================
+
+# GPU acceleration (if using GPU)
+# torch>=2.0.0
+# tensorflow>=2.13.0
+# cuda-toolkit  # Requires manual installation
+
+# Advanced NLP
+spacy>=3.6.0
+nltk>=3.8.1
+textacy>=0.12.0
+
+# Knowledge graphs
+rdflib>=6.3.0
+
+# ============================================================================
+# DEVELOPMENT DEPENDENCIES
+# Specify with: pip install -r requirements-dev.txt
+# ============================================================================
+
+# See requirements-dev.txt for:
+# - Testing tools (pytest plugins)
+# - Documentation tools
+# - Code analysis tools
+# - Debugging tools
+# - Development utilities
+
+# ============================================================================
+# OPTIONAL: GPU SUPPORT
+# ============================================================================
+# For GPU acceleration, uncomment and install:
+# torch[cuda11.8]>=2.0.0
+# tensorflow[and-cuda]>=2.13.0
+# rapids>=23.0.0
+
+# ============================================================================
+# NOTES ON INSTALLATION
+# ============================================================================
+
+# 1. Create virtual environment:
+#    python -m venv venv
+#    source venv/bin/activate  # or: venv\Scripts\activate on Windows
+
+# 2. Upgrade pip:
+#    pip install --upgrade pip
+
+# 3. Install requirements:
+#    pip install -r requirements.txt
+
+# 4. For specific database support:
+#    pip install psycopg2-binary  # For PostgreSQL
+#    pip install pymysql          # For MySQL
+
+# 5. For LLM providers, also set environment variables:
+#    export OPENAI_API_KEY="your-key"
+#    export ANTHROPIC_API_KEY="your-key"
+
+# 6. For Spark/Hadoop on Windows, see:
+#    https://spark.apache.org/docs/latest/
+
+# 7. To freeze current environment:
+#    pip freeze > requirements-frozen.txt
